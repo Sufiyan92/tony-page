@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 96vw;
+    height: 650px;
+    background-color: #1E1E1E;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 30% 70%;
+
+}
+
+.child {
+    border-radius: 50px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #262626;
+}
+
+/* long column CSS */
+
+#long {
+    grid-row: 1/span 2;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.ProfilePic {
+    border-radius: 50%;
+    height: 222px;
+    width: 222px;
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 300px;
+    background-color: #1E1E1E;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Upper content */
+.childInner {
+    padding: 25px;
+}
+
+
+.Upper-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: justify;
+    column-gap: 15px;
+}
+
+.childInner img {
+    width: 400px;
+}
+
+/* lower content */
+.tableDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Table styling */
+table {
+    width: 600px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #FFFFFF80;
+    border-radius: 20px;
+}
+
+thead {
+    border-bottom: 1px solid #FFFFFF80;
+
+}
+
+td,
+th {
+    border-left: 1px solid #FFFFFF80;
+    border-right: 1px solid #FFFFFF80;
+    padding: 10px;
+
+}
+
+tfoot {
+    border-top: 1px solid #FFFFFF80;
+}
+
+
+/* Midia Query */
+@media (max-width: 800px) {
+    #long {
+        grid-row: 1/span 1
+    }
+
+    .container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
